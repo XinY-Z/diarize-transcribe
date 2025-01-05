@@ -1,0 +1,11 @@
+wget
+torch
+torchaudio
+nvidia-cublas-cu12
+nvidia-cudnn-cu12
+nemo_toolkit[asr]>=2.0.0rc0
+nltk
+faster-whisper>=1.1.0
+git+https://github.com/MahmoudAshraf97/demucs.git
+git+https://github.com/MahmoudAshraf97/ctc-forced-aligner.git
+git+https://github.com/oliverguhr/deepmultilingualpunctuation.git

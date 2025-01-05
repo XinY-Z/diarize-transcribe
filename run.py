@@ -10,7 +10,7 @@ import time
 # os.environ['OMP_NUM_THREADS'] = '16'
 
 
-# options
+# customize the input and output paths
 input_files_path = '/uufs/chpc.utah.edu/common/HIPAA/IRB_00083132/studydata/'
 output_files_path = '/uufs/chpc.utah.edu/common/HIPAA/IRB_00083132/new_diarized_transcription/'
 
@@ -35,7 +35,7 @@ for audio_file in audio_files:
     if not os.path.exists(os.path.join(output_files_path, 'srt')):
         os.makedirs(os.path.join(output_files_path, 'srt'), exist_ok=True)
 
-    # apply pretrained pipeline
+    # apply pretrained pipeline and track runtime
     start = time.time()
     os.system(f'python3 nemo+fasterwhisper.py --input_path {input_path} --output_paths {output_txt_path} {output_srt_path}')
     with open('timelog.txt', 'a') as f:

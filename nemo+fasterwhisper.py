@@ -85,7 +85,7 @@ else:
 compute_type = "float16"
 # or run on GPU with INT8
 # compute_type = "int8_float16"
-# TODO: to run on 1080ti, use float32
+# TODO: to run on older GPUs (e.g., 1080ti), use float32
 # compute_type = "float32"
 
 whisper_model = faster_whisper.WhisperModel(
@@ -139,9 +139,9 @@ torch.cuda.empty_cache()
 
 alignment_model, alignment_tokenizer = load_alignment_model(
     device,
-    # attn_implementation="sdpa",
+    # attn_implementation="sdpa",   # TODO: need to switch to sdpa if using older GPUs (e.g., 1080ti)
     dtype=torch.float16 if device == "cuda" else torch.float32,
-)  # TODO: need to switch to sdpa if using 1080ti
+)
 
 audio_waveform = (
     torch.from_numpy(audio_waveform)

@@ -306,7 +306,7 @@ def create_config(output_dir):
     config.diarizer.vad.parameters.offset = 0.6
     config.diarizer.vad.parameters.pad_offset = -0.05
     config.diarizer.msdd_model.model_path = (
-        "diar_msdd_telephonic"  # up until 12/27/24 only telelphonic model is released
+        "diar_msdd_telephonic"  # up to 12/27/24, only telelphonic model is released, but this is often enough.
     )
 
     return config
