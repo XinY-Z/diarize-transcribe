@@ -90,6 +90,6 @@ hard to just do like regular things let alone find the time to focus on school a
 ```
 
 ## Acknowledgements
-Copyright (c) 2023, Mahmoud Ashraf. 
+Copyright (c) 2023, Mahmoud Ashraf.  
 Ashraf, M. (2024). _Whisper diarization: Speaker diarization using OpenAI Whisper_ [GitHub repository]. 
 https://github.com/MahmoudAshraf97/whisper-diarization
