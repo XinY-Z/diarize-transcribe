@@ -40,7 +40,9 @@ Two subfolders will be created in the `output_files_path`:
 
 ## Example results
 ### Diarized transcription in talk turns
-Transcripts are anonymized for confidentiality reasons. Only part of the transcript is shown here.
+Transcripts are anonymized for confidentiality reasons. Only part of the transcript is shown here.  
+Note that because the model has not been fine-tuned with therapy sessions, users may need to manually assign the speaking
+roles to the speakers (i.e., client vs. therapist).
 ```txt
 Speaker 1: Okay, so we'll just do a massage.  Have a seat wherever you feel most comfortable.  So how are you feeling? 
  What brings you into the counseling center?  
