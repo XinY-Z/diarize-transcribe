@@ -1,9 +1,3 @@
-# --------------------------------------------------------------------------------------------
-# This pipeline uses Nvidia NeMo, OpenAI Whisper, and Facebook Demucs to transcribe and diarize audio files
-# Modified from https://github.com/MahmoudAshraf97/whisper-diarization
-# Special thanks to Mahmoud Ashraf
-# --------------------------------------------------------------------------------------------
-
 import os
 import time
 
