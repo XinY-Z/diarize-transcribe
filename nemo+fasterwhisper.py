@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------------------------
 # This pipeline uses Nvidia NeMo, OpenAI Whisper, and Facebook Demucs to transcribe and diarize audio files
 # Modified from https://github.com/MahmoudAshraf97/whisper-diarization
-# Special thanks to Mahmoud Ashraf
+# Copyright (c) 2023, Mahmoud Ashraf. 
 # --------------------------------------------------------------------------------------------
 
 import torch
